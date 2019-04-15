@@ -85,8 +85,7 @@
     * This respository is public and other developers can see and collaborate with you.
     * Please see snapshot -
       ![GitHub repository snapshot](./images/002-11-reposnapshot.png)
-      
-git@github.com:naeemmohd/RESTfulAPIDeploytoHeroku.git
+      t
   * Step 2 : ***Create an account in Heroku Cloud*** - 
     * Use the following link to sign on and then login to the Heroku Dashboard
       * ***https://signup.heroku.com/*** - to sign on and login to Heroku Dashboard
@@ -107,46 +106,6 @@ git@github.com:naeemmohd/RESTfulAPIDeploytoHeroku.git
   * Step 6 : ***Deploy the app now***  
     * You will have option to manually or auto deploy the app
       * For now choose "manual" and start deploying 
-      ![Depoy the app in Heroku ](./images/002-011-deploytheappinheroku02.png)
+      ![Depoy the app in Heroku ](./images/002-011-deploytheappinheroku.png)
     
 
-### Testing the project:
-  * Now the project is ready for testing, you can repeat all the operations you tested in previous exercise like register, login, add a product, update a product, delete a product, get one product, get all products. 
-  * Since we did not change the existing functionality and just injected the ORM functionality to the app, it should work.
-  * The screenshot for register user below:
-  ![Register user](./images/002-11-registeruser.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for login user below:
-  ![Login user](./images/002-11-loginuser.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for POST category below:
-  ![POST Category](./images/002-11-postcategory.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for POST product below:
-  ![POST Product](./images/002-11-postproduct.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for PUT Category below:
-  ![PUT Category](./images/002-11-putcategory.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for PUT Product below:
-  ![PUT Product](./images/002-11-putproduct.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for GETCategory below:
-  ![GET Category](./images/002-11-getcategory.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for GETProduct below:
-  ![GET Product](./images/002-11-getproduct.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for GET All Categorys below:
-  ![GET All Categorys](./images/002-11-getallcategory.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for GET All Products below:
-  ![GET All Products](./images/002-11-getallproducts.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for DELETE Product below:
-  ![DELETE Product](./images/002-11-deleteproduct.png)
-  ---------------------------------------------------------------------------------
-  * The screenshot for DELETE Category below:
-  ![DELETE Category](./images/002-11-deletecategory.png)
-  ![DELETE Category Cascade](./images/002-11-deletecategoryimpact.png)
-  ---------------------------------------------------------------------------------
