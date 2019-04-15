@@ -19,10 +19,6 @@ flaskApp.secret_key = "%!!#@#^*&^%$^#%@"
 restApi = Api(flaskApp)
 jwt = JWT(flaskApp, checkAuthenticity, checkIdentity)
 
-@flaskApp.before_first_request
-def setupDatabase():
-    db.create_all()
-
 # to return custom resposne in addition to just the token(here user id also)
 @jwt.auth_response_handler
 def custom_response_handler(access_token, identity):
