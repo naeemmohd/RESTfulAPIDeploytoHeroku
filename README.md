@@ -67,24 +67,24 @@
     * Once your flask aspp files and these above 4 files are ready then execute - ***git init*** - you are instructing Git to initialize the folder as a git repository
     * Then, execute - ***git add --a*** - you are instructing git to add all the files to the staging areas of the git on yr local machine
     * Please see the screenshot below:
-      ![Git Initialize and Add all changes to git staging area ](../images/002-011-gitinitandadd.png)
+      ![Git Initialize and Add all changes to git staging area ](./images/002-011-gitinitandadd.png)
     * Now commit your changes with a nice commit message - ***git commit -m "Initial commit for Flask app and required files for Heroku deployment"***
     * Please see the screenshot below:
-      ![Git commit ](../images/002-011-gitcommit.png)
+      ![Git commit ](./images/002-011-gitcommit.png)
     * Now push your changes to GitHub respository( in my case ***git@github.com:naeemmohd/RESTfulAPIDeploytoHeroku.git***)
     * if you have not created a repository then from the logged in GitHbb Dashboard 0 use "New Repository" option to create a respository - 
     * Please see snapshot -
-      ![Create a new repository](../images/002-11-createrepository.png)
+      ![Create a new repository](./images/002-11-createrepository.png)
     * Once the GitHub repository is created, execute the command
       * ***git remote add origin "git@github.com:naeemmohd/RESTfulAPIDeploytoHeroku.git"*** - you are instructing Git to add a remote GitHub repository for your local repository 
       * ***git push -u orgin master*** - you are instructing Git to now finally push your changes in the local master branch to the upstream origin branch
     * Please see snapshot -
-      ![Push the changes to GitHub](../images/002-11-pushchangestogit.png)
+      ![Push the changes to GitHub](./images/002-11-pushchangestogit.png)
     * Once the GitHub repository is created, execute the command
     * Finally check if all your lacal changes are now pushed to GitHub repository
     * This respository is public and other developers can see and collaborate with you.
     * Please see snapshot -
-      ![GitHub repository snapshot](../images/002-11-reposnapshot.png)
+      ![GitHub repository snapshot](./images/002-11-reposnapshot.png)
       t
   * Step 2 : ***Create an account in Heroku Cloud*** - 
     * Use the following link to sign on and then login to the Heroku Dashboard
@@ -92,21 +92,21 @@
   * Step 3 : ***Create a new app in Heroku Dashboard***
     * Click "Create New App" and select a name e..g. "***restfulapiinheroku***"  and region as "United States" if the users of API are closer to US else Europe.
     * The screenshot below:
-      ![Create an app in Heroku ](../images/002-011-createappinheroku.png)
+      ![Create an app in Heroku ](./images/002-011-createappinheroku.png)
   * Step 4 : ***Connect to the GitHub repository***  
     * The app looks like below - click "Connect to GitHub"
-      ![The app in Heroku ](../images/002-011-theappinheroku.png)
+      ![The app in Heroku ](./images/002-011-theappinheroku.png)
     * Once you click connect to GitHub, it will prompt for authorization and let you search your repository by name and select and connect it.
-      ![The app in Heroku ](../images/002-011-theappinheroku02.png)
+      ![The app in Heroku ](./images/002-011-theappinheroku02.png)
   * Step 5 : ***Add Python to buildpack***  
     * Go to the ***settings*** --> ***Buildpacks***
     * Click "***Add BuildPack***" and select python
     * For now choose "manual" and start deploying 
-      ![add build pack ](../images/002-011-addbuildpack.png)
+      ![add build pack ](./images/002-011-addbuildpack.png)
   * Step 6 : ***Deploy the app now***  
     * You will have option to manually or auto deploy the app
       * For now choose "manual" and start deploying 
-      ![Deploy the app in Heroku ](../images/002-011-deploytheappinheroku.png)
+      ![Deploy the app in Heroku ](./images/002-011-deploytheappinheroku.png)
     
 ### Install Heroku CLI to check logs and other features locally:
   * Please execute the follwing command - 
@@ -116,45 +116,45 @@
   * Then access the logs using command - 
     * ***heroku logs --app=heroku logs --app=restfulapiinheroku***  
   * Please see the screenshot below -
-    ![Install and access Heroku CLI and logs](../images/002-011-installherokucliandaccesslogs.png)
-    ![Install and access Heroku CLI and logs](../images/002-011-installherokucliandaccesslogs02.png)
+    ![Install and access Heroku CLI and logs](./images/002-011-installherokucliandaccesslogs.png)
+    ![Install and access Heroku CLI and logs](./images/002-011-installherokucliandaccesslogs02.png)
 
 ### Testing the project (The Heroku End Point - https://restfulapiinheroku.herokuapp.com/):
   * Now the project is ready for testing, you can repeat all the operations you tested in previous exercise like register, login, add a product, update a product, delete a product, get one product, get all products. 
   * Since we did not change the existing functionality and just injected the ORM functionality to the app, it should work.
   * The screenshot for register user below:
-  ![Register user](../images/002-11-registeruser.png)
+  ![Register user](./images/002-11-registeruser.png)
   ---------------------------------------------------------------------------------
   * The screenshot for login user below:
-  ![Login user](../images/002-11-loginuser.png)
+  ![Login user](./images/002-11-loginuser.png)
   ---------------------------------------------------------------------------------
   * The screenshot for POST category below:
-  ![POST Category](../images/002-11-postcategory.png)
+  ![POST Category](./images/002-11-postcategory.png)
   ---------------------------------------------------------------------------------
   * The screenshot for POST product below:
-  ![POST Product](../images/002-11-postproduct.png)
+  ![POST Product](./images/002-11-postproduct.png)
   ---------------------------------------------------------------------------------
   * The screenshot for PUT Category below:
-  ![PUT Category](../images/002-11-putcategory.png)
+  ![PUT Category](./images/002-11-putcategory.png)
   ---------------------------------------------------------------------------------
   * The screenshot for PUT Product below:
-  ![PUT Product](../images/002-11-putproduct.png)
+  ![PUT Product](./images/002-11-putproduct.png)
   ---------------------------------------------------------------------------------
   * The screenshot for GETCategory below:
-  ![GET Category](../images/002-11-getcategory.png)
+  ![GET Category](./images/002-11-getcategory.png)
   ---------------------------------------------------------------------------------
   * The screenshot for GETProduct below:
-  ![GET Product](../images/002-11-getproduct.png)
+  ![GET Product](./images/002-11-getproduct.png)
   ---------------------------------------------------------------------------------
   * The screenshot for GET All Categorys below:
-  ![GET All Categorys](../images/002-11-getallcategory.png)
+  ![GET All Categorys](./images/002-11-getallcategory.png)
   ---------------------------------------------------------------------------------
   * The screenshot for GET All Products below:
-  ![GET All Products](../images/002-11-getallproducts.png)
+  ![GET All Products](./images/002-11-getallproducts.png)
   ---------------------------------------------------------------------------------
   * The screenshot for DELETE Product below:
-  ![DELETE Product](../images/002-11-deleteproduct.png)
+  ![DELETE Product](./images/002-11-deleteproduct.png)
   ---------------------------------------------------------------------------------
   * The screenshot for DELETE Category below:
-  ![DELETE Category](../images/002-11-deletecategory.png)
+  ![DELETE Category](./images/002-11-deletecategory.png)
   ---------------------------------------------------------------------------------
