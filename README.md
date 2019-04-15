@@ -22,10 +22,10 @@
     * We will use it as our app to deploy to Heroku
     * Go to the folder 011-RESTfulAPIDeploytoHeroku in command line and execute - ***git init*** (commands git that current folder is version controlled)
     * ***Prepare*** required files for deployment purpose - follwing 4 additional files are needed 
-      * ***runtime.txt*** - holds the value of the runtime application - in our case - ***python-3.5.2**
+      * ***runtime.txt*** - holds the value of the runtime application - in our case - ***python-3.7.3**
       * The code for runtime.txt:
         ```
-        python-3.5.2
+        python-3.7.3
         ```
       * ***requirements.txt*** - holds the values for the packages needed by the  application
       * The code for requirements.txt:
