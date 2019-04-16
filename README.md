@@ -141,10 +141,10 @@
     * But there can be issues if we push "breaking" changes to master
   * ***Solution*** : 
     * Create a feature branch locally, test the app, push the feature branch to remote and then merge it  to master
-    * Step 1 - Lets first ***enable "Automatic deployments"*** in Heroku:
+    * ***Step 1*** - Lets first ***enable "Automatic deployments"*** in Heroku:
       * Please seee the snapshot below:
-      ![Enable automatic deployment in Heroku](./images/002-011-enableautodeploy.png)
-    * Step 2 - Now in your local branch do the following:
+      ![Enable automatic deployment in Heroku](../images/002-011-enableautodeploy.png)
+    * ***Step 2*** - Now in your local branch do the following:
       * Get the latest of master - ***git fetch && git pull*** # if using Windows then ***git fetch ; git pull***
       * Create a local/feature branch - ***git branch feature/AddAutomaticDeploy*** 
       * Checkout to the local branch - - ***git checkout feature/AddAutomaticDeploy*** 
@@ -154,8 +154,12 @@
       * Push feature branch changes to remote - ***git push -set-upstream origin feature/AddAutomaticDeploy*** 
       * Now checkout to the master - ***git checkout master***
       * Finally merge the feature branch changes to master - ***git merge feature/AddAutomaticDeploy***
-        ![working with feature branch](./images/002-011-workingwithfeaturebranch.png)
-        ![merging with master branch](./images/002-011-mergingwithmasterbranch.png)
+      * and delete the local/feature branch - ***git branch -d feature/AddAutomaticDeploy***
+        ![working with feature branch](../images/002-011-workingwithfeaturebranch.png)
+        ![merging with master branch](../images/002-011-mergingwithmasterbranch.png)
+    * ***Step 3*** - Verify in Heroku that the automatic deployment fired:
+      ![Verify auto deploy in Heroku](../images/002-011-verifyautodeployinheroku.png)
+
 
 ### Testing the project (The Heroku End Point - https://restfulapiinheroku.herokuapp.com/):
   * Now the project is ready for testing, you can repeat all the operations you tested in previous exercise like register, login, add a product, update a product, delete a product, get one product, get all products. 
